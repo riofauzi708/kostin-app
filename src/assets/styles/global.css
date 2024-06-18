@@ -1,0 +1,85 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --font-size-small: 14px;
+    --color-primary: #42b983;
+    --color-secondary: #35495e;
+    --color-text: #333;
+    --color-background: #f9f9f9;
+    --line-height: 1.6;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0.5em 0;
+    color: var(--color-primary);
+}
+
+h1 {
+    padding: 0.3em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    padding: 0.5em 1em;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--color-primary), 10%);
+}
+
+input,
+textarea {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
